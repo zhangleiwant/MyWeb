@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    <!--对象传参 date-->
+    window.onload = function () {
+        var oInput = document.getElementsByTagName('input');
+        var iNew = new Date(oInput[0].value);
+        var timer = null;
+        oInput[2].onclick = function () {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                var iNow = new Date();
+                var t = Math.floor((iNew - iNow) / 1000);
+                if (t > 0) {
+                    var str = Math.floor(t / 86400) + '天' + Math.floor(t % 86400 / 3600) + '时' + Math.floor(t % 86400 % 3600 / 60) + '分' + t % 60 + '秒';
+                    oInput[1].value = str;
+                } else {
+                    clearInterval(timer);
+                }
+
+            }, 1000);
+        }
+
+    }
+
+
+</script>
+<body>
+<p>距离</p><input type="text" value="August 29,2018 23:42:0">
+<p>还有</p><input type="text">
+<input type="button" value="开始倒计时吧">
+</body>
+</html>

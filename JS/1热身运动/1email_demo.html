@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新浪邮箱</title>
+
+    <script type="text/javascript">
+        window.onload = f;
+        function f() {
+            var detail =  document.getElementById("detail");
+            var title =  document.getElementById("title");
+            function show() {
+                detail.style.display = 'block';
+            }
+
+            title.onmousemove = show;
+            title.onmouseout =  function (){
+                detail.style.display="none";
+            };
+        }
+
+    </script>
+    <style>
+        .lis {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 80px;
+            height: 30px;
+            background: beige;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #detail {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 160px;
+            background: aqua;
+            display: none;
+            text-align: center;
+        }
+        #detail li{
+            text-align: center;
+            line-height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li class="lis"id="title">
+        <a  href="#">微博</a>
+    </li>
+    <ul id="detail">
+        <li>私信</li>
+        <li>我的</li>
+        <li>基础</li>
+    </ul>
+</ul>
+<!--a hover 如果离开的话无法监听离开的事件-->
+
+</body>
+</html>

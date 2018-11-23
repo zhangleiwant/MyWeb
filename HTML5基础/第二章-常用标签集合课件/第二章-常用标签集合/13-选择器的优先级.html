@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				height: 100px;
+				background-color: yellow;
+			}
+			#box{
+				background-color: pink;
+			}
+			.div1{
+				background-color: green;
+			}
+		</style>
+		<!--
+			优先级 代码执行生效的顺序
+			行间样式 > id选择器 > 类选择器 > 标签选择器
+		-->
+	</head>
+	<body>
+		<!--<div id="box" class="div1" style="background-color: red;"></div>-->
+		<div id="box" class="div1"></div>
+	</body>
+</html>

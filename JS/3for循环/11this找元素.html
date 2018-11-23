@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11this找元素</title>
+</head>
+<body>
+    <input id="btn" type="button" value="haha ">
+</body>
+
+<script>
+    var btn = document.getElementById('btn');
+    // alert(this)  window
+    function fn1() {
+        alert(this)
+    }
+    // fn1()  直接调用window
+    // btn.onclick = fn1() window
+    btn.onclick = function () {
+        alert(this)  //元素
+    }
+
+</script>
+</html>

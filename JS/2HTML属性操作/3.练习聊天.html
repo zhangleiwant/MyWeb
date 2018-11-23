@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天记录</title>
+</head>
+<body>
+<div id="content" style="width: 300px;height: 500px;background-color: #efefef;padding: 10px">
+
+</div>
+<div id="control" style="position: absolute;top: 500px;height: 40px;left: 20px;margin: auto">
+    <span id="author">岳岚</span>
+    <input type="text" id="voice_value">
+    <input type="button" id="commit" value="发送">
+</div>
+<script>
+    var content = document.getElementById('content');
+    var author = document.getElementById('author');
+    var voiceValue = document.getElementById('voice_value');
+    var button = document.getElementById('commit');
+
+    button.onclick = function () {
+        if(voiceValue.value!==''){
+            content.innerHTML += author.innerHTML + ":" + voiceValue.value + "</br>";
+        }else {
+            alert('请输入一些内容吧')
+        }
+        var name = author.innerHTML;
+        if (name ==="岳岚"){
+
+        } else{
+
+        }
+        voiceValue.value = "";
+    };
+    author.onclick = function () {
+        var name = author.innerHTML;
+        if (name ==="岳岚"){
+            author.innerHTML = "张磊";
+        } else{
+            author.innerHTML = "岳岚";
+        }
+    }
+
+
+</script>
+</body>
+</html>

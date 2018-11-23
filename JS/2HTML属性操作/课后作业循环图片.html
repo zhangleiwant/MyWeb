@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>模式图片</title>
+    <style>
+        #content {
+            width: 400px;
+            height: 400px;
+            background-color: #f1f1f1;
+            border: 5px solid grey;
+            position: relative;
+        }
+
+        #content a {
+            position: absolute;
+            background: black;
+            opacity: 0.4;
+            height: 30px;
+            padding: 10px;
+            text-align: center;
+            top: 180px;
+            text-decoration: none;
+        }
+
+        #content a:hover {
+            opacity: 0.9;
+        }
+
+        #pre {
+            left: 10px;
+        }
+
+        #next {
+            right: 10px;
+        }
+
+        .textStyle {
+            margin: auto;
+            position: absolute;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            width: 400px;
+            background: black;
+        }
+
+        #title {
+            top: 0;
+        }
+
+        #detail {
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+<!--重点就是判断条件-->
+<script>
+    window.onload = function () {
+        var pre = document.getElementById('pre');
+        var next = document.getElementById('next');
+        var title = document.getElementById('title');
+        var detail = document.getElementById('detail');
+        var img = document.getElementById('img');
+        var recover = document.getElementById('recover');
+        var numline = document.getElementById('numline');
+        var modalValue = document.getElementById('modal_text');
+
+        var imgs = ["img/1.jpg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg", "img/6.jpg", "img/7.jpg", "img/8.jpg", "img/9.jpg", "img/10.jpg"];
+        var texts = ["美女", "美女壁纸", "小美女", "丑女", "傻可可", "二狗", "帅明哥", "你这是要干啥", "晒腹肌", "俺媳妇压轴"];
+        var modalTexts = ["图片循环浏览", "图片顺序浏览"];
+        var num = 0;
+        var isRecover = true;
+        recover.onclick = function () {
+            isRecover = true;
+            modalValue.innerHTML = modalTexts[0];
+        };
+        numline.onclick = function () {
+            isRecover = false;
+            modalValue.innerHTML = modalTexts[1];
+        };
+        title.innerHTML = (num + 1) + "/" + (imgs.length);
+        detail.innerHTML = texts[num];
+        pre.onclick = function () {
+            num--;
+            if (isRecover) {
+                if (num <= -1) {
+                    num = 9;
+                }
+            } else {
+                if (num <= -1) {
+                    alert("已经是第一张了");
+                    num = 0;
+                    return;
+                }
+            }
+            setImg();
+        };
+
+        next.onclick = function () {
+            num++;
+            if (isRecover) {
+                if (num === 10) {
+                    num = 0;
+                }
+            } else {
+                if (num >= 10) {
+                    alert('已经是最后一张了');
+                    num = 9;
+                    return;
+                }
+            }
+            setImg();
+        };
+
+        function setImg() {
+            img.src = imgs[num];
+            title.innerHTML = (num + 1) + "/" + (imgs.length);
+            detail.innerHTML = texts[num];
+        }
+    }
+
+
+</script>
+
+
+<div style="width: 200px;height:60px;margin: 20px">
+    <input id="recover" type="button" value="循环切换">
+    <input id="numline" type="button" value="顺序切换"></br>
+    <span id="modal_text" style="width: 400px;text-align: center">不知道什么模式</span>
+</div>
+<div id="content">
+
+    <a id="pre" href="#"><</a>
+    <a id="next" href="#">></a>
+    <p class="textStyle" id="title">图片数量正在计算中</p>
+    <span class="textStyle" id="detail">图片说明正在加载中</span>
+    <img id="img" src="img/1.jpg" style="width: 400px;height: 400px"/>
+</div>
+</body>
+</html>

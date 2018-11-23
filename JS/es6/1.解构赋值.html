@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+    //     var obj = {
+    //         name:"xiha",
+    //         age:20,
+    //         sex:undefined
+    //     };
+    //
+    //     //正常访问
+    //     // console.log(obj);
+    //     // console.log(obj.name);
+    //
+    //     // 解构
+    //     var {name,age,sex = "mail"} = obj;
+    //     console.log(name);
+    //     console.log(age);
+    //     console.log(sex)
+    //
+    //
+    // //    如果在这定义name = ""
+    //     var name = "";
+    //     ({name} = obj);
+    //     console.log(name)
+
+
+        var arr = "zhangsan".split("");
+        console.log(arr);
+
+        console.log(arr[0]);
+        console.log(arr[1]);
+
+    //    解构
+        var [a,b,c,,,d,...all] = arr;
+        console.log(a,b,c,d,all);
+    </script>
+</body>
+</html>

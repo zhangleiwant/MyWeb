@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发送消息</title>
+</head>
+<body>
+<!--显示问题 在左边还是右边以及头像点击切换显示需要两个tag-->
+<div style="background-color: #efefef;width: 300px;height: 450px;">
+    <div id="content" style="position:relative;width: 300px;height: 450px;padding: 10px"></div>
+    <div id="control" style="position: absolute;top: 480px;height: 40px;left: 20px;margin: auto">
+        <img id="author_img" style="width: 32px;height: 32px" src="img/success.png">
+        <input type="text" id="voice_value">
+        <input type="button" id="commit" value="发送">
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        var content = document.getElementById('content');
+        var author = document.getElementById('author_img');
+        var voiceValue = document.getElementById('voice_value');
+        var button = document.getElementById('commit');
+
+        var isSuccess = true;
+        var isRight = true;
+        author.onclick = function () {
+            if (isSuccess) {
+                author.src = "img/success.png";
+                isSuccess = false;
+                isRight = true
+            } else {
+                author.src = "img/error.png";
+                isSuccess = true;
+                isRight = false
+            }
+        };
+
+        button.onclick = function () {
+            if (voiceValue.value === "") {
+                alert('请写点东西在发送吧');
+                return;
+            }
+            if (isRight) {
+                content.innerHTML += "<img src='img/success.png'/>" + ":" + voiceValue.value + "<br/>";
+            }else{
+                content.innerHTML += "<img src='img/error.png' style='margin-left: 150px'/>" + ":" + voiceValue.value + "<br/>";
+            }
+        }
+    }
+</script>
+</body>
+</html>

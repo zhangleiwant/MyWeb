@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .box {
+        width: 400px;
+        border: 1px solid red;
+        overflow: hidden;
+    }
+
+    .left {
+        float: left;
+        background-color: #5c8ef3;
+    }
+
+    .right {
+        float: right;
+        background-color: #8ec300;
+    }
+    h2{
+        /*加上宽度后 显示错误*/
+        height: 30px;
+        /*加上浮动解决*/
+        float: left;
+    }
+</style>
+<!--
+元素浮动之后，能设置宽度的话就给元素加宽度，如果需要宽度时内容撑开，就给它里面的块元素加上浮动。
+-->
+<body>
+<div class="box">
+    <div class="left">
+        <h2>左边</h2>
+    </div>
+    <div class="right">
+        <h2>右边</h2>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="588001b1-9fb0-4ad4-932a-d81fb39ca0b6" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="7.display：inline-block问题.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/7.display：inline-block问题.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="8.IE6最小高度问题.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/8.IE6最小高度问题.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="9.IE6双边距.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/9.IE6双边距.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.li里元素都浮动 li在IE6 7 下方会产生4px间隙问题.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/10.li里元素都浮动 li在IE6 7 下方会产生4px间隙问题.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="11.浮动之间注释，导致多复制一个文字问题.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/11.浮动之间注释，导致多复制一个文字问题.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="12.父元素的overflow hidden 包不住子元素的relative.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/12.父元素的overflow hidden 包不住子元素的relative.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="13.IE6下绝对定位元素父级宽高是奇数，绝对定位元素的right和bottom值会有1px偏差.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/13.IE6下绝对定位元素父级宽高是奇数，绝对定位元素的right和bottom值会有1px偏差.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="14.IE6下input空隙.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/14.IE6下input空隙.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="15.IE6下绝对定位元素和浮动元素并列绝对定位元素消失.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/15.IE6下绝对定位元素和浮动元素并列绝对定位元素消失.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="16.IE6不支持png24图片.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/16.IE6不支持png24图片.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>modal</find>
+      <find>shade</find>
+      <find>innerHTML</find>
+      <find>自定义</find>
+      <find>componyCommit</find>
+      <find>document.body</find>
+      <find>container</find>
+      <find>getStyle</find>
+      <find>pos</find>
+      <find>时间对象</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/13数组/5随机数.html" />
+        <option value="$PROJECT_DIR$/13数组/6,concat reverse.html" />
+        <option value="$PROJECT_DIR$/13数组/7将一个字符串倒叙.html" />
+        <option value="$PROJECT_DIR$/3for循环/5for循环嵌套.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/2.定位透明度练习.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/3.定位导航练习.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/3.定位导航练习2.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/3.定位导航练习3.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/1.内联块练习 发现好店.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/3.定位导航练习4.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/5.表格练习.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/5表格练习2.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/4.表单练习.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/6快捷键练习.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/1.分页练习.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/浮动/1.浮动右侧排列.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/浮动/2.clear清除浮动.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/浮动/3.清除浮动的方法.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/定位/1.相对定位.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/定位/2.绝对定位.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/3.第一块元素浮动，第二块元素加margin值等于第一块元素 IE6下会有间隙.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/1.H5标签的兼容性.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/2.浮动宽度.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/4.IE6下子组件宽高超过父组件时 会撑满父布局.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/5.p包含块元素嵌套规则.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/6.margin兼容性问题.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/8.IE6最小高度问题.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/3.定位导航练习1.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/7.display：inline-block问题.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/9.IE6双边距.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/11.浮动之间注释，导致多复制一个文字问题.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/10.li里元素都浮动 li在IE6 7 下方会产生4px间隙问题.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/12.父元素的overflow hidden 包不住子元素的relative.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/13.IE6下绝对定位元素父级宽高是奇数，绝对定位元素的right和bottom值会有1px偏差.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/14.IE6下input空隙.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/15.IE6下绝对定位元素和浮动元素并列绝对定位元素小时.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/15.IE6下绝对定位元素和浮动元素并列绝对定位元素消失.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/16.IE6下输入框背景图的bug.html" />
+        <option value="$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/16.IE6不支持png24图片.html" />
+        <option value="$PROJECT_DIR$/es6/1.解构赋值.html" />
+        <option value="$PROJECT_DIR$/es6/2.set.html" />
+        <option value="$PROJECT_DIR$/es6/2.1map.html" />
+        <option value="$PROJECT_DIR$/es6/2.2遍历接口.html" />
+        <option value="$PROJECT_DIR$/es6/3.类的操作.html" />
+        <option value="$PROJECT_DIR$/css/1.transition动画属性.html" />
+        <option value="$PROJECT_DIR$/css/2.white-space属性.html" />
+        <option value="$PROJECT_DIR$/11.系统时间 日期对象/1.系统时间对象.html" />
+        <option value="$PROJECT_DIR$/7作用域 预解析/1预解析测试.html" />
+        <option value="$PROJECT_DIR$/3for循环/7cssText操作.html" />
+        <option value="$PROJECT_DIR$/5数据类型/2找到合适的值.html" />
+        <option value="$PROJECT_DIR$/7作用域 预解析/2注意事项.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS" type="462c0819:PsiDirectoryNode" />
+              <item name="2HTML属性操作" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS" type="462c0819:PsiDirectoryNode" />
+              <item name="2HTML属性操作" type="462c0819:PsiDirectoryNode" />
+              <item name="html高级" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS" type="462c0819:PsiDirectoryNode" />
+              <item name="2HTML属性操作" type="462c0819:PsiDirectoryNode" />
+              <item name="html高级" type="462c0819:PsiDirectoryNode" />
+              <item name="兼容性" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS" type="462c0819:PsiDirectoryNode" />
+              <item name="2HTML属性操作" type="462c0819:PsiDirectoryNode" />
+              <item name="html高级" type="462c0819:PsiDirectoryNode" />
+              <item name="兼容性" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/工作任务/JavaScript基础部分/JavaScript基础部分" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zhang\WebstormProjects\JS\2HTML属性操作\html高级\img" />
+      <recent name="C:\Users\zhang\WebstormProjects\JS\2HTML属性操作\html高级\兼容性" />
+      <recent name="C:\Users\zhang\WebstormProjects\JS\2HTML属性操作\html高级" />
+      <recent name="C:\Users\zhang\WebstormProjects\JS\9定时器" />
+      <recent name="C:\Users\zhang\WebstormProjects\JS\6函数传参、重用、价格计算\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zhang\WebstormProjects\JS\2HTML属性操作\html高级" />
+      <recent name="C:\Users\zhang\WebstormProjects\JS\4自定义属性和索引\img" />
+      <recent name="C:\Users\zhang\WebstormProjects\JS\2HTML属性操作" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="588001b1-9fb0-4ad4-932a-d81fb39ca0b6" name="Default" comment="" />
+      <created>1526259648304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526259648304</updated>
+      <workItem from="1526259649749" duration="754000" />
+      <workItem from="1527056933464" duration="1561000" />
+      <workItem from="1527065965043" duration="26798000" />
+      <workItem from="1527210682988" duration="19087000" />
+      <workItem from="1527470522060" duration="122000" />
+      <workItem from="1527488722462" duration="8264000" />
+      <workItem from="1527557377450" duration="15174000" />
+      <workItem from="1527660341850" duration="889000" />
+      <workItem from="1527819409206" duration="3823000" />
+      <workItem from="1528091415743" duration="5404000" />
+      <workItem from="1528166805442" duration="556000" />
+      <workItem from="1529486132589" duration="1030000" />
+      <workItem from="1534328022708" duration="620000" />
+      <workItem from="1534381207603" duration="598000" />
+      <workItem from="1534731158091" duration="14217000" />
+      <workItem from="1534815364996" duration="828000" />
+      <workItem from="1534831906105" duration="9291000" />
+      <workItem from="1534900473748" duration="298000" />
+      <workItem from="1534918121286" duration="6397000" />
+      <workItem from="1534987661039" duration="16925000" />
+      <workItem from="1535073731426" duration="9294000" />
+      <workItem from="1535334598630" duration="12552000" />
+      <workItem from="1535356447199" duration="6940000" />
+      <workItem from="1535426705688" duration="14672000" />
+      <workItem from="1535508019751" duration="15310000" />
+      <workItem from="1535554704698" duration="9597000" />
+      <workItem from="1535599656508" duration="135000" />
+      <workItem from="1535600286560" duration="603000" />
+      <workItem from="1535616968736" duration="4000" />
+      <workItem from="1536642888132" duration="679000" />
+      <workItem from="1536647131185" duration="636000" />
+      <workItem from="1536651679310" duration="8000" />
+      <workItem from="1537325361170" duration="10721000" />
+      <workItem from="1537427018553" duration="4361000" />
+      <workItem from="1537492561709" duration="12237000" />
+      <workItem from="1537839933390" duration="20771000" />
+      <workItem from="1537949288487" duration="610000" />
+      <workItem from="1540346783245" duration="6327000" />
+      <workItem from="1540448730313" duration="147000" />
+      <workItem from="1540518894302" duration="96000" />
+      <workItem from="1540519015039" duration="1000" />
+      <workItem from="1540523067380" duration="2741000" />
+      <workItem from="1540779812127" duration="78000" />
+      <workItem from="1541431022209" duration="664000" />
+      <workItem from="1541470556569" duration="2132000" />
+      <workItem from="1541662820768" duration="8000" />
+      <workItem from="1542072156362" duration="1394000" />
+      <workItem from="1542361868286" duration="74000" />
+      <workItem from="1542709935273" duration="31000" />
+      <workItem from="1542866213262" duration="4205000" />
+      <workItem from="1542941229874" duration="567000" />
+      <workItem from="1542942125881" duration="483000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="270714000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3024236" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/1.transition动画属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/2.white-space属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13数组/3.数组去重.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13数组/4数组排序.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13数组/5随机数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13数组/6,concat reverse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13数组/7将一个字符串倒叙.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13数组/1.遍历.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9定时器/3.$封装的使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9定时器/4.getComputedStyle 和 currentStyle使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9定时器/6.单次定时器广告案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9定时器/5.重复执行定时器切换背景图片.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9定时器/7自定义属性切换图片.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="100" column="39" lean-forward="true" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9定时器/8.QQ菜单实例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11.系统时间 日期对象/1.系统时间对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3for循环/6cssText操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3for循环/9自动生成一组新闻.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3for循环/11this找元素1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3for循环/7cssText操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3for循环/8cssText操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3for循环/11this找元素.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5数据类型/2找到合适的值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6函数传参、重用、价格计算/1.购买商品.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6函数传参、重用、价格计算/2.修改文本框的值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="46" lean-forward="true" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7作用域 预解析/1预解析测试.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7作用域 预解析/2注意事项.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7作用域 预解析/3注意事项.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es6/1.解构赋值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es6/2.1map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es6/2.2遍历接口.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1562">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es6/2.set.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es6/3.类的操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/4.表单练习.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/5.表格练习1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/5表格练习2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="81" column="15" lean-forward="true" selection-start-line="81" selection-start-column="15" selection-end-line="81" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#tr#2;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/1.H5标签的兼容性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/2.浮动宽度.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/3.第一块元素浮动，第二块元素加margin值等于第一块元素 IE6下会有间隙.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/4.IE6下子组件宽高超过父组件时 会撑满父布局.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/5.p包含块元素嵌套规则.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/6.margin兼容性问题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/7.display：inline-block问题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/8.IE6最小高度问题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/9.IE6双边距.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/10.li里元素都浮动 li在IE6 7 下方会产生4px间隙问题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/11.浮动之间注释，导致多复制一个文字问题.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/12.父元素的overflow hidden 包不住子元素的relative.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/13.IE6下绝对定位元素父级宽高是奇数，绝对定位元素的right和bottom值会有1px偏差.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/14.IE6下input空隙.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/15.IE6下绝对定位元素和浮动元素并列绝对定位元素消失.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2HTML属性操作/html高级/兼容性/16.IE6不支持png24图片.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

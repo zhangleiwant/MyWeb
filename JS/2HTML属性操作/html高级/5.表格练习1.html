@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格练习</title>
+</head>
+<!--
+    table表格
+    thread 表头
+    tbody 表格体
+    tr 表格行
+    th 元素定义表头
+    td 元素定义表格单元
+    border:1设置边框
+    border-collapse:collapse 清除重复边框
+    colspan="2" 行内合一
+    rowspan="2"竖合一
+-->
+<style>
+    table {
+        border-collapse: collapse;
+    }
+</style>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th colspan="2">周一</th>
+        <th>周二</th>
+        <th>周三</th>
+        <th>周四</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">java</td>
+        <td>java</td>
+        <td>java</td>
+        <td>java</td>
+    </tr>
+    <tr>
+        <td>java</td>
+        <td>java</td>
+        <td>java</td>
+        <td>java</td>
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

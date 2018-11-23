@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+
+    <!--练习给出一个函数弹出区间内的数组-->
+    function arr(a, b) {
+        var arr = [];
+        if (a <= b) {
+            for (let i = a; i <= b; i++) {
+                arr.push(i)
+            }
+        } else {
+            for (let i = b; i <= a; i++) {
+                arr.push(i)
+            }
+        }
+        return arr;
+    }
+    alert(arr(1, 9));
+    alert(arr(5, 1));
+
+</script>
+<body>
+</body>
+</html>

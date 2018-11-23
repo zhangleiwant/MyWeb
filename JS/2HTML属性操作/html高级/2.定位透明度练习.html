@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位透明度练习</title>
+</head>
+<!--z-index 层级 默认1
+    opacity 透明度
+    filter: alpha(opacity = 50);IE 6,7使用
+-->
+<style>
+    div {
+        width: 300px;
+        height: 300px;
+    }
+
+    .box {
+        background-color: red;
+        margin: 200px auto;
+        position: relative;
+    }
+
+    .content {
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        background-color: #8ec300;
+
+    }
+
+    .mark {
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+        background-color: #5c8ef3;
+        z-index: -1;
+        opacity: 0.5;
+        filter: alpha(opacity = 50);
+    }
+</style>
+<body>
+<div class="box">
+    <div class="content">
+
+    </div>
+    <div class="mark"></div>
+</div>
+</body>
+</html>

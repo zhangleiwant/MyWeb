@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for循环坐标</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            line-height: 50px;
+            text-align: center;
+            font-size: 30px;
+            color: #ffffff;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<!--逢10 怎么换行问题-->
+<script>
+    window.onload = function () {
+        var str = "";
+        for (let i = 0; i < 100; i++) {
+            str += "<div>" + i + "</div>"
+        }
+        document.body.innerHTML = str;
+        var aDiv = document.getElementsByTagName('div');
+        for (let i = 0; i < aDiv.length; i++) {
+            if (i / 10 < 1) {
+                aDiv[i].style.top = 0 + "px";
+                aDiv[i].style.marginLeft = i * 60 + "px";
+            } else if (i / 10 >= 1 && i / 10 < 2) {
+                aDiv[i].style.top = 60 + "px";
+                aDiv[i].style.marginLeft = (i - 10) * 60 + "px";
+            } else if (i / 10 >= 2 && i / 10 < 3) {
+                aDiv[i].style.top = 60 * 2 + "px";
+                aDiv[i].style.marginLeft = (i - 20) * 60 + "px";
+            } else if (i / 10 >= 3 && i / 10 < 4) {
+                aDiv[i].style.top = 60 * 3 + "px";
+                aDiv[i].style.marginLeft = (i - 30) * 60 + "px";
+            } else if (i / 10 >= 4 && i / 10 < 5) {
+                aDiv[i].style.top = 60 * 4 + "px";
+                aDiv[i].style.marginLeft = (i - 40) * 60 + "px";
+            } else if (i / 10 >= 5 && i / 10 < 6) {
+                aDiv[i].style.top = 60 * 5 + "px";
+                aDiv[i].style.marginLeft = (i - 50) * 60 + "px";
+            } else if (i / 10 >= 6 && i / 10 < 7) {
+                aDiv[i].style.top = 60 * 6 + "px";
+                aDiv[i].style.marginLeft = (i - 60) * 60 + "px";
+            } else if (i / 10 >= 7 && i / 10 < 8) {
+                aDiv[i].style.top = 60 * 7 + "px";
+                aDiv[i].style.marginLeft = (i - 70) * 60 + "px";
+            } else if (i / 10 >= 8 && i / 10 < 9) {
+                aDiv[i].style.top = 60 * 8 + "px";
+                aDiv[i].style.marginLeft = (i - 80) * 60 + "px";
+            } else if (i / 10 >= 9 && i / 10 < 10) {
+                aDiv[i].style.top = 60 * 9 + "px";
+                aDiv[i].style.marginLeft = (i - 90) * 60 + "px";
+            }
+        }
+    }
+</script>
+<body>
+
+</body>
+</html>

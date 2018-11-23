@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--疑惑 如何把输入框的值赋值-->
+<!--疑惑 如何正确找到外层标签-->
+<!--解决 如何正确找到外层标签 通过ul li-->
+<script>
+    window.onload = function () {
+        var oDiv = document.getElementById('box');
+        var oD = oDiv.getElementsByTagName('li');
+        alert(oD.length);
+        for (let i = 0; i < oD.length; i++) {
+            reset(oD[i]);
+        }
+
+        function reset(oDiv) {
+            var aInput = oDiv.getElementsByTagName('input')[0];
+            var aImg = oDiv.getElementsByTagName('img')[0];
+            var aDiv = oDiv.getElementsByTagName('div')[0];
+            var aChoice = aDiv.getElementsByTagName('input');
+            <!--解决 如何把输入框的值赋值  定义一个变量-->
+            var value = aInput.value;
+
+
+            function dis() {
+                aImg.style.display = 'none';
+                aDiv.style.display = 'inline-block';
+            }
+
+            function show() {
+                aImg.style.display = 'inline-block';
+                aDiv.style.display = 'none';
+            }
+
+            aImg.onclick = function () {
+                dis()
+            };
+
+            aChoice[0].onclick = function () {
+                value = aInput.value;
+                show()
+            };
+
+            aChoice[1].onclick = function () {
+                aInput.value = value;
+                show()
+            };
+        }
+
+
+    }
+
+
+</script>
+
+<body>
+<ul id="box">
+    <li>
+        <input type="text" value="课程1"/>
+        <img src="img/ico1.gif">
+        <div style="display: none">
+            <input type="button" value="确定">
+            <input type="button" value="取消">
+        </div>
+
+    </li>
+    <li>
+        <input type="text" value="课程2"/>
+        <img src="img/ico1.gif">
+        <div style="display: none">
+            <input type="button" value="确定">
+            <input type="button" value="取消">
+        </div>
+
+    </li>
+    <li>
+        <input type="text" value="课程3"/>
+        <img src="img/ico1.gif">
+        <div style="display: none">
+            <input type="button" value="确定">
+            <input type="button" value="取消">
+        </div>
+
+    </li>
+
+</ul>
+
+</body>
+</html>

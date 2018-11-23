@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--定时器移动控件 -->
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        left: 30px;
+        top: 50px;
+        position: absolute;
+    }
+</style>
+<body>
+<input type="button" value="往前" id="btn1">
+<input type="button" value="往后" id="btn2">
+<div id="div1"></div>
+</body>
+
+<script>
+    var btn = document.getElementById('btn1');
+    var div = document.getElementById('div1');
+    var btnBack = document.getElementById('btn2');
+
+    //将timer设置为自定义属性
+    btn.onclick = function () {
+       move(div,12,800)
+    //    可以加一个参数 往哪个方向跑  left  right
+    };
+    btnBack.onclick = function () {
+        move(div,-12,10)
+
+        // clearInterval(div.timer);
+        // div.timer = setInterval(function () {
+        //     var offest = parseInt(getStyle(div, 'left')) + 19;//步长
+        //     if (offest > 800) {
+        //         offest = 800;
+        //     }
+        //     div.style.left = offest + 'px';
+        //     if (offest == 800) {//定时器管理 ，什么时候停  809==100 (处理判断步长进行控制)
+        //         //>=是不好的  如果多出来一点 显示不全或者是再来回来就体验不好。判断速度 强制等于800
+        //         clearInterval(div.timer);
+        //         alert(offest)
+        //     }
+        // }, 30)
+    };
+
+
+    //封装主要看不同点的参数
+    function move(obj, dir, target) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function () {
+            var offest = parseInt(getStyle(obj, 'left')) + dir;//步长
+            if (offest > target && dir > 0) {//往前跑
+                offest = target
+            }
+            if (offest < target && dir < 0) {//往后跑
+                offest = target
+            }
+            obj.style.left = offest + 'px';
+            if (offest == target) {//定时器管理 ，什么时候停  809==100 (处理判断步长进行控制)
+                //>=是不好的  如果多出来一点 显示不全或者是再来回来就体验不好。判断速度 强制等于800
+                clearInterval(obj.timer);
+            }
+        }, 30)
+    }
+
+    function getStyle(obj, attr) {
+        return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr]
+    }
+</script>
+</html>

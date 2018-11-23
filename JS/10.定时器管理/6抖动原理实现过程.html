@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    img {
+        width: 200px;
+        height: auto;
+        position: absolute;
+        left: 200px;
+        top: 100px;
+    }
+</style>
+<script src="../utils.js"></script>
+<script>
+    window.onload = function () {
+        var oImg = document.getElementsByTagName('img')[0];
+        //原来位置
+        var pos = parseInt(getStyle(oImg, 'left'));
+        var timer = null;
+        var num = 0;//作为条件清除定时器
+        oImg.onclick = function () {
+            //抖的频率
+            var arr = [];
+            for (let i = 20; i > 0; i -= 2) {
+                arr.push(i, -i);
+            }
+            arr.push(0);
+            clearInterval(timer);
+            timer = setInterval(function () {
+                oImg.style.left = pos + arr[num] + 'px';
+                num++;
+                if (num === arr.length) {
+                    clearInterval(timer)
+                }
+            }, 50)
+        }
+    }
+</script>
+<body>
+<img src="../images/mans/4.jpg">
+</body>
+</html>

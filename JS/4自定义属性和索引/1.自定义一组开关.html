@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义开关</title>
+    <style>
+        li {
+            width: 80px;
+            height: 90px;
+            list-style: none;
+            float: left;
+            margin-right: 30px;
+            background: url("img/normal.png");
+        }
+    </style>
+</head>
+<script>
+    window.onload = function () {
+        var oLi = document.getElementsByTagName('li');
+        for (let i = 0; i < oLi.length; i++) {
+            //新增li的属性，使用this来调用。
+            oLi[i].isNormal = true;
+            oLi[i].onclick = function () {
+                if (this.isNormal) {
+                    this.style.background = 'url("img/active.png")';
+                    this.isNormal = false;
+                } else {
+                    this.style.background = 'url("img/normal.png")';
+                    this.isNormal = true;
+                }
+            }
+        }
+    }
+</script>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

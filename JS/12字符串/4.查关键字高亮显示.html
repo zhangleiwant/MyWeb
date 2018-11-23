@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+<input type='text'>
+<input type='button' value="替换">
+<p>妙味课堂是一支独具特色的IT培训团队，妙味反对传统IT教育枯燥乏味的教学模式，妙味提供一种全新的快乐学习方法！<br/>
+    2013年底，妙味课堂最新推出"远程培训"服务，受到很多朋友们的喜爱与追捧，我们必将更加努力的帮助远程学习的朋友实现技术提升……</p>
+
+</body>
+<script>
+    var oInput = document.getElementsByTagName('input');
+    var p = document.getElementsByTagName('p')[0];
+
+
+    oInput[2].onclick = function () {
+        var preName = oInput[0].value;
+        var currentName = oInput[1].value;
+        var str = p.innerHTML;
+        if (!currentName) {
+            return
+        }
+        //加上背景色 就是高亮了
+        p.innerHTML = str.split(preName).join('<span style="background: red">' + currentName + '</span>');
+
+    }
+</script>
+</html>

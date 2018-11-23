@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background: url("../images/screens/1.jpg") no-repeat  center top;text-align: center;
+    }
+</style>
+<script>
+    window.onload = function () {
+        var img = document.getElementsByTagName('img')[0];
+        setTimeout(function () {
+            img.style.display = 'inline-block';
+            setTimeout(function () {
+                img.style.display = 'none';
+            }, 3000)
+        }, 2000)
+    }
+</script>
+<body>
+<img src="../images/mans/1.jpg" style="display: none;">
+</body>
+</html>

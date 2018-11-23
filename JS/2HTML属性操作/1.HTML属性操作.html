@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML属性操作</title>
+    <style>
+        p {
+            display: block;
+        }
+    </style>
+</head>
+<script>
+    window.onload = function () {
+        var read = document.getElementById('read');
+        read.onclick = function () {
+            alert(read.value);
+        };
+        var commit = document.getElementById('commit');
+        var input = document.getElementById('input');
+        var select = document.getElementById('select_ball');
+        commit.onclick = function () {
+            alert(input.value + select.value);
+        }
+        //写
+        var compony = document.getElementById('compony');
+        var componyCommit = document.getElementById('componyCommit');
+        var img = document.getElementById('img');
+        var word = document.getElementById('word');
+        componyCommit.onclick = function () {
+            img.src = compony.value;
+            word.innerHTML = compony.value ;//通过innerHTML获取元素值
+        }
+    }
+</script>
+<body>
+<p>属性的读取</p>
+<input id="read" type="button" value="属性的读取">
+<input id="input" type="text">
+<select id="select_ball">
+    <option>篮球</option>
+    <option>网球</option>
+    <option>足球</option>
+</select>
+<input id="commit" type="button" value="确定">
+<p>属性的写图片替换</p>
+<input id="compony" type="text">
+<input id="componyCommit" type="button" value="确定">
+<div>
+    <img id="img" src="img/2.jpg"/>
+</div>
+<p id="word">请输入类似img/1.jpg</p>
+</body>
+</html>

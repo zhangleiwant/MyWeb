@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    ul {
+        width: 2000px;
+        white-space: nowrap;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    img {
+        width: 300px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        width: 300px;
+        height: 180px;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    p {
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
+        width: 100%;
+        background: grey;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+</style>
+<script src="../utils.js">
+</script>
+<!--疑问就是想要移动肯定要设置position absolute 但是如果按照我这种布局：-->
+<script>
+    $(function () {
+        var oUl = $('items');
+        var str = '';
+        var len = 5;
+        var arrImgs = ["../images/screens/1.jpg", "../images/screens/2.jpg", "../images/screens/3.jpg", "../images/screens/4.jpg", "../images/screens/5.jpg"];
+        var arrTexts = ["图一", '图二', "图三", '图四', "图五"];
+        for (let i = 0; i < len; i++) {
+            str += '<li><img src=' + arrImgs[i] + '><p>' + arrTexts[i] + '</p></li>'
+        }
+        oUl.innerHTML = str;
+
+        var num = 0;
+        var oLi = document.getElementsByTagName('li');
+
+        oLi[0].style.left = '200px';
+        //    查找内层的p移动  ，还有就是 移动li但是p包含在内层中 这种怎么处理。
+
+
+    })
+</script>
+<body>
+<div style="width: 300px;height: 180px" id="box">
+    <ul id="items"></ul>
+</div>
+
+
+</body>
+</html>

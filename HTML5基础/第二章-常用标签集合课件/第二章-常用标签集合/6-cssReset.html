@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			css reset 原则：
+			但凡是浏览默认的样式，都不要使用。
+			因为每个浏览器下标签的默认样式可能会出现不一致的情况。
+			
+			人为的将所有样式全部统一（清除），再根据实际情况（设计稿）进行设置。
+			
+			哪些样式是需要重置的？？？
+				与盒模型相关的样式
+					border
+					margin
+					padding
+				标签特有的样式
+					ul>li
+					ol>li
+					
+			书写原则：
+				用到什么标签就清除所用标签的默认样式
+				建议不要直接将所有标签全部加上。
+				不要将所有标签全部统一设置一致的reset，需根据标签默认样式特征来分类设置。
+		-->
+		<style>
+			body, h1, h2, h3, h4, h5, h6, p, dl, dd{
+				margin: 0;
+			}
+			ul, ol{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			img{
+				border: none;
+				vertical-align: top;
+			}
+			a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="">超链接</a>
+		<a href="">
+			<img src="img/1.png" alt="" />
+		</a>
+		<h1>标题 - logo</h1>
+		<h2>标题</h2>
+		<h3>标题</h3>
+		<h4>标题</h4>
+		<h5>标题</h5>
+		<h6>标题</h6>
+		
+		<p>段落</p>
+		
+		<strong>强调</strong>
+		<em>强调</em>
+		
+		<ul>
+			<li>ul - 无序列表</li>
+			<li>列表项</li>
+			<li>ul的子集（下一级元素）只能是li</li>
+		</ul>
+		
+		<ol>
+			<li>ol - 有序列表</li>
+			<li>列表项</li>
+			<li>ol的子集（下一级元素）只能是li</li>
+		</ol>
+		
+		<dl>
+			<dt>dl-自定义列表；dt-自定义列表title</dt>
+			<dd>dd-自定义列表的列表项（信息）</dd>
+		</dl>
+		
+		<mark>标记</mark>
+	</body>
+</html>

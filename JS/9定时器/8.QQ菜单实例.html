@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src='../utils.js'></script>
+
+<style>
+    #content {
+        width: 200px;
+        height: 400px;
+        background: #8ec300;
+    }
+
+    #title {
+        width: 180px;
+        height: 120px;
+        background: red;
+        position: absolute;
+        left: 220px;
+        top: 10px;
+        display: none;
+    }
+</style>
+
+<script>
+    $(function () {
+        var c = $('content');
+        var title = $('title');
+
+        c.onmousemove = show;
+        c.onmouseout = hidden;
+
+        title.onmousemove = show;
+        title.onmouseout = hidden;
+        var timer = null;
+
+        function show() {
+            clearTimeout(timer);
+            title.style.display = 'block'
+        }
+
+
+        function hidden() {
+            timer = setTimeout(function () {
+                title.style.display = 'none'
+            }, 500);
+
+        }
+    });
+
+</script>
+<body>
+
+<div id="content"></div>
+<div id="title"></div>
+
+</body>
+</html>

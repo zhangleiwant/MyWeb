@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cssText操作1</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        border: solid red 1px;
+    }
+</style>
+<body>
+    <div id="div1">
+        abc
+    </div>
+    <input id="btn" type="button" value="修改">
+</body>
+<script>
+    window.onload= function () {
+        var oDiv = document.getElementById('div1');
+        var btn = document.getElementById("btn");
+        //添加宽高
+        oDiv.onclick = function () {
+           oDiv.style.cssText = "width:200px;height:200px"
+        };
+        //清空显示默认的样式表里面的值
+        btn.onclick = function () {
+            oDiv.style.cssText = ""
+        }
+    }
+</script>
+</html>
+

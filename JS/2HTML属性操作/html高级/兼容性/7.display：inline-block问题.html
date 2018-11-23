@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+    7.display：inline-block问题
+        IE 7下设置inline-block无效
+        解决：
+            *display:inline
+            *zoom:1
+    坑：其他浏览器子组件间默认带margin值为5的边距。
+    1.div不要换行，转义了。
+    2.换行间加入注释符
+    3.将结束标签与下一个开始标签写在一起，这样，他们之间的空格也会被清除掉
+    4.将元素结束标签的”>“放在下一行的开始处
+-->
+<style>
+    body{
+        margin: 0;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        *display:inline;
+        *zoom:1;
+    }
+</style>
+<body>
+    <!--<div>-->
+        <!--div-->
+    <!--</div>-->
+    <!--<div>-->
+        <!--div-->
+    <!--</div>-->
+    <!--<div>-->
+        <!--div-->
+    <!--</div>-->
+    <!--<div>div</div><div>div</div><div>div</div>-->
+
+    <!--<div></div>&lt;!&ndash;-->
+        <!--&ndash;&gt;<div></div>&lt;!&ndash;-->
+        <!--&ndash;&gt;<div></div>-->
+
+    <!--<div>div-->
+    <!--</div><div>div-->
+    <!--</div><div>-->
+        <!--div</div>-->
+
+    <div>
+        div
+    </div
+    ><div>
+        div
+    </div
+    ><div>
+        div
+    </div>
+
+
+</body>
+</html>

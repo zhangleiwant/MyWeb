@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+
+
+    window.onload = function () {
+        var btn = document.getElementsByTagName("input");
+        //使用var 版本这里会出现问题 Uncaught TypeError: Cannot read property 'style' of undefined
+        //for循环执行特别快，执行完毕后i就会变成3 那么btn[3]是没有的。
+        //for里面包了一个onclick 不能直接使用i
+        //但是直接使用let 是没有问题的。
+        for (var i = 0; i < btn.length; i++) {
+            btn[i].onclick = function () {
+                alert(i)// 3  ？ undefined
+                // btn[i].style.background = 'yellow'
+                //加var 就是在里面找  没有加var就是在外面找。
+                for (var i = 0; i <btn.length ; i++) {
+                    btn[i].style.background = 'yellow'
+                }
+            }
+        }
+    }
+</script>
+<body>
+    <input type="button" value="1">
+    <input type="button" value="2">
+    <input type="button" value="3">
+</body>
+</html>

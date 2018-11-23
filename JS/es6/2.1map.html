@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--
+/**
+ * 字典：是用来存储不重复key的Hash结构。不同于集合(Set)的是，字典使用的是[键，值]的形式来储存数据的。
+ *
+ * JavaScript 的对象（Object:{}）只能用字符串当作键。这给它的使用带来了很大的限制。
+ *
+ * 为了解决这个问题，ES6提供了Map数据结构。它类似于对象，也是键值对的集合，但是“键”的范围不限于字符串，各种类型的值（包括对象）都可以当作键。也就是说，Object结构提供了“字符串—值”的对应，Map结构提供了“值—值”的对应，是一种更完善的Hash结构实现。如果你需要“键值对”的数据结构，Map比Object更合适。。
+ */
+
+-->
+<body>
+    <script>
+        var m = new Map([["name","zhangsan"],["age",20]]);
+        console.log(m);
+        var s ={
+            "sex":"mail"
+        };
+        
+        m.set(s, "sss");
+        console.log(m.size);
+        m.set({},"1");//不同对象
+        m.set({},"2");
+        console.log(m);
+
+        var n = {};//相同对象
+        m.set(n,"abc");
+        m.set(n,"d");
+        console.log(m);
+
+        var value = m.get("name");
+        console.log(value);
+
+        console.log(m.delete("name"));//删除是否成功
+
+        console.log(m.keys());
+        console.log(m.values());
+        console.log(m.entries());
+
+        //for   of  遍历
+        for (var a of m){
+            console.log(a)
+        }
+
+
+    </script>
+</body>
+</html>

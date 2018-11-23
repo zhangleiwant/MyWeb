@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示隐藏</title>
+</head>
+<style>
+    #div{
+
+    }
+</style>
+<!--行间样式写法，style=""
+    标签选择器优先级  行间样式 > id > 类 > 标签
+-->
+<body>
+    <input type="button" value="显示" onClick="show()">
+    <input type="button" value="隐藏" onclick="hind()">
+    <div id="div" style="   width:200px;
+        height:200px;
+        background-color:red;
+        display:block">
+
+    </div>
+<script>
+    var div = document.getElementById("div");
+    function show(){
+        div.style.display = "block";
+    }
+    function hind(){
+        div.style.display = "none";
+    }
+</script>
+</body>
+</html>

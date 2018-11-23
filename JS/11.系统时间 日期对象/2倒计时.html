@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    var iNow = new Date();
+    var iNew = new Date('August 29,2018 23:50:0');
+    var t = Math.floor((iNew - iNow) / 1000);//秒
+    alert(t)
+    var str = Math.floor(t / 86400) + '天' + Math.floor(t % 86400 / 3600) + '时' + Math.floor(t % 86400 % 3600 / 60) + '分' + t % 60 + '秒';
+
+    alert(str)
+</script>
+<body>
+
+</body>
+</html>

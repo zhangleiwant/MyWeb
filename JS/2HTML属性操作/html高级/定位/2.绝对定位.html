@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+    使元素脱离文档流
+    如果有定位父级相对于定位父级发生偏移，没有定位父级相对于document发生偏移；
+-->
+<style>
+    /*<!--定位父级-->*/
+    body{
+        position: relative;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+    }
+    .box1{
+        background-color: red;
+    }
+    .box2{
+        background-color: green;
+        position: absolute;
+        left: 200px;
+        top: 200px;
+        opacity: 0.5;
+        filter:alpha(opacity=50);
+    }
+    .box3{
+        background-color: blue;
+    }
+</style>
+<body>
+<div class="box1">div1</div>
+<div class="box1">div1</div>
+<div class="box2">div2</div>
+<div class="box3">div3</div>
+</body>
+</html>

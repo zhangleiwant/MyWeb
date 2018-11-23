@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+    11.两个浮动元素中间有注释或者内联元素(没有文本)并且和父级宽度相差不超过3px;(IE6以下)
+    解决方案：
+				1、两个浮动元素中间避免出现内联元素或者注释
+				2、与父级宽度相差3px或以上
+-->
+<style>
+    .box {
+        width: 400px;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        width: 398px;
+        float: right;
+    }
+</style>
+<body>
+<div class="box">
+    <div class="left"></div>
+    <!--hahaha -->
+    <span></span>
+    <div class="right">哈哈是大佛 阿萨德发的</div>
+</div>
+</body>
+</html>

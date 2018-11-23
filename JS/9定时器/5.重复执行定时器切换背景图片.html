@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src='../utils.js'></script>
+
+<script>
+    $(function () {
+        var imgs = ['../images/screens/1.jpg', '../images/screens/2.jpg', '../images/screens/3.jpg', '../images/screens/4.jpg', '../images/screens/5.jpg'];
+        var num = 0;
+        var timer = null;  //设置为 timer 以便清除。
+        //换背景
+        $('replace').onclick = function () {
+            clearInterval(timer);//不用判断 timer 可以允许null 未定义。
+            timer = setInterval(function () {
+                //坑   背景图图片赋值格式
+                document.body.style.background = 'url(' + imgs[num] + ')';
+                num++;
+                num %= imgs.length;
+            }, 1000);
+        };
+
+        $('sure').onclick = function () {
+            clearInterval(timer);
+        }
+    })
+</script>
+
+<body>
+<input type="button" value="换背景吧" id="replace">
+<input type="button" value="确定" id="sure">
+
+</body>
+</html>

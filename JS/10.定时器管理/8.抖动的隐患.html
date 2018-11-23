@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--抖动的隐患   不能回到原来的位置-->
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 100px;
+    }
+</style>
+<script src="../utils.js"></script>
+<script>
+    window.onload = function () {
+        var oImg = document.getElementsByTagName('img');
+        for (let i = 0; i < oImg.length; i++) {
+            oImg[i].style.left = 80 + 110 * i + 'px';
+            oImg[i].onmouseover = function () {
+                shake(oImg[i], 'top');
+            }
+        }
+    }
+</script>
+<body>
+<img src="../images/mans/1.jpg">
+<img src="../images/mans/2.jpg">
+<img src="../images/mans/3.jpg">
+<img src="../images/mans/4.jpg">
+<img src="../images/mans/5.jpg">
+<img src="../images/mans/6.jpg">
+</body>
+</html>

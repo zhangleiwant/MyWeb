@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src='../utils.js'></script>
+<style>
+    div {
+        width: 100px;
+        height: 120px;
+        background: #333333;
+    }
+</style>
+<!--currentStyle调不起来-->
+<script>
+    $(function () {
+
+        $('b').onclick = function () {
+            alert(getStyle($('div1'), 'width'));
+        }
+    })
+    // window.onload = function () {
+    //     var d = document.getElementById('div1');
+    //     var btn = document.getElementById('b');
+    //     btn.onclick = function () {
+    //         // currentStyle是可以调的  (IE弹出1) 其他弹出2
+    //         if (d.currentStyle) {
+    //             alert(d.currentStyle['width'])
+    //         } else {
+    //             alert(getComputedStyle(d)['height'])
+    //         }
+    //     }
+    // }
+
+</script>
+<body>
+<input id="b" type="button" value="按钮">
+<div id="div1"></div>
+</body>
+</html>

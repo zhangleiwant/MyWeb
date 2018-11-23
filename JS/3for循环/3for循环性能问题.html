@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var str = "";
+            var aInput = document.getElementsByTagName("input");
+            for (let i = 0; i < 10000; i++) {
+                str += "<input type='button' value='按钮'>";
+            }
+            //性能问题，不能写在for循环内部，每一次都要寻找赋值。。。
+            document.body.innerHTML = str;
+            //写在body赋值后面。
+            for (let i = 0; i < 10000; i++) {
+                aInput[i].onclick = function () {
+                    alert(i);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

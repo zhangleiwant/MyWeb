@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--
+        getElementByTagName 动态方法  前面可以跟标签  也可以跟document (找到的是全布局的所有元素) 返回的是数据,
+        getElementById 静态方法  前面只能跟document  找到的是单个元素
+    -->
+    <script>
+        window.onload = function () {
+            var oUl = document.getElementById('oul');
+            var oLi = oUl.getElementsByTagName('li');
+            var wholeLi = document.getElementsByTagName('li');
+            // alert(oLi.length);
+            alert(wholeLi.length);
+        }
+    </script>
+</head>
+<body>
+<ul id="oul">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<ol>
+    <li/>
+    <li/>
+    <li/>
+</ol>
+</body>
+</html>

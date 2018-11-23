@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    window.onload = function () {
+        var oInput = document.getElementsByTagName("input");
+        var oP = document.getElementsByTagName("p");
+        var arr = ["张三", "李四", "王五"];
+        for (let i = 0; i < oInput.length; i++) {
+            oInput[i].index = i;//通过for循环 function外层进行添加属性
+            oInput[i].onclick = function () {
+                this.value = arr[this.index];
+                oP[this.index].innerHTML= arr[this.index];
+            }
+        }
+    }
+</script>
+<body>
+<input type="button" value="btn1">
+<input type="button" value="btn2">
+<input type="button" value="btn3">
+<p>a</p>
+<p>b</p>
+<p>c</p>
+</body>
+</html>

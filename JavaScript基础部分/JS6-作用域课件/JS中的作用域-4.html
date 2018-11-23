@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>无标题文档</title>
+
+    <script>
+        window.onload = function () {
+            var aBtn = document.getElementsByTagName('input');
+            for (let i = 0; i < aBtn.length; i++) {
+                aBtn[i].index = i;
+                aBtn[i].onclick = function () { //不能再for循环中使用点击事件。 使用let
+                    aBtn[i].style.background = 'yellow';
+                };
+            }
+        };
+    </script>
+
+</head>
+
+<body>
+
+<input type="button" value="按钮1"/>
+<input type="button" value="按钮2"/>
+<input type="button" value="按钮3"/>
+
+</body>
+</html>

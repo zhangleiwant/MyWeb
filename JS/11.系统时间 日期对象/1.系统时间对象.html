@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //获取系统时间对象
+    // alert(new Date())
+    window.onload = function () {
+
+        setInterval(function () {
+            time();
+        }, 1000);
+
+        time();
+
+        function time() {
+            var t = new Date();
+            var year = t.getFullYear();
+            var month = t.getMonth();
+            var day = t.getDate();
+            // t.getDay() 周几  周日为0
+            var hours = t.getHours();
+            var minute = t.getMinutes();
+            var second = t.getSeconds();
+
+            var times = t.getTime();//时间戳
+            var str = '';
+            str = year + '年' + toTwo(month + 1) + '月' + toTwo(day) + '日' + toTwo(hours) + ':' + toTwo(minute) + ":" + toTwo(second);
+            document.body.innerHTML = str
+        }
+
+    };
+
+    function toTwo(value) {
+        return value < 10 ? '0' + value : value;
+    }
+</script>
+</body>
+</html>

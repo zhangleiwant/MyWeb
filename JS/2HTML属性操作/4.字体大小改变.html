@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>改变字体</title>
+</head>
+<style>
+    span {
+        background-color: #efefef;
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid darkgray;
+    }
+
+    .red {
+        width: 500px;
+        border: 10px solid grey;
+        background-color: red;
+    }
+
+    .yellow {
+        width: 300px;
+        border: 10px solid green;
+        background-color: yellow;
+    }
+</style>
+<body>
+<div style="margin-top: 20px">
+    <span id="+">+</span>
+    <span id="-">-</span>
+    <span id="red">红</span>
+    <span id="yellow">黄</span>
+    <p id="text_box" style="font-size: 15px">
+        妙味JS基础课程，让你对JS基础有一个全新的认识。如果你拿不准自己是否处在JS基础阶段，不妨看看这里《你需要从JS基础开始学起吗》做个测评：http://bbs.miaov.com/forum.php?mod=viewthread&tid=7524妙味JS基础课程，
+        让你对JS基础有一个全新的认识。如果你拿不准自己是否处在JS基础阶段，不妨看看这里《你需要从JS基础开始学起吗》做个测评：http://bbs.miaov.com/forum.php?mod=viewthread&tid=7524
+    </p>
+</div>
+
+<script>
+    var add = document.getElementById('+')
+    var min = document.getElementById('-')
+    var red = document.getElementById('red')
+    var yellow = document.getElementById('yellow')
+    var box = document.getElementById('text_box')
+
+    var num = 15;
+    add.onclick = function () {
+        if (num >= 40) {
+            return;
+        }
+        num += 2;
+        box.style.fontSize = num + "px";
+    };
+
+    min.onclick = function () {
+        if (num <= 10) {
+            return;
+        }
+        num -= 2;
+        box.style.fontSize = num + "px";
+    };
+    red.onclick = function () {
+        box.className = "red"
+    };
+    yellow.onclick = function () {
+        box.className = "yellow"
+    }
+
+
+</script>
+</body>
+</html>

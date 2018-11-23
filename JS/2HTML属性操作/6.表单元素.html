@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--类似这种修改input  type需要兼容  IE6 ,7,8 显示隐藏解决-->
+    <script>
+        window.onload=function () {
+            var btn = document.getElementById('btn');
+            btn['onclick'] = function () {
+                btn.type = "checkbox";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" type="input" >
+</body>
+</html>

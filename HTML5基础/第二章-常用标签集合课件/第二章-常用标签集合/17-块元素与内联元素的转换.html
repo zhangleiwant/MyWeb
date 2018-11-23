@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			display：inline        显示为内嵌
+			使行块属性标签具备内联元素的特性
+			display：block        显示为块
+			使内联元素具备块属性标签的特性
+
+			display是将标签转换为页面中显示的类型
+			display不会改变标签本质
+		-->
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				display: inline;
+			}
+			span{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div>div1</div>
+		<div>div2</div>
+		<span>span1</span>
+		<span>span2</span>
+	</body>
+</html>

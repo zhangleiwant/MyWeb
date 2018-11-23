@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+    window.onload = function () {
+        var aIn = document.getElementsByTagName('input');
+        var nums = ["A", "B", "C", "D"];
+        for (let i = 0; i < aIn.length; i++) {
+            //新增num属性，作为索引弹出数组里面对应的值。
+            aIn[i].num = 0;
+            aIn[i].onclick = function () {
+                alert(nums[this.num]);
+                this.num++;
+                if (this.num === nums.length) {
+                    this.num = 0;
+                }
+            };
+        }
+    }
+</script>
+<body>
+<input type="button" value="0">
+<input type="button" value="0">
+<input type="button" value="0">
+</body>
+</html>

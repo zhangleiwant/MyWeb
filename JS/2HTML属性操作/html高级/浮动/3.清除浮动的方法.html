@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+    1.未加浮动前  外层div border包裹内层div
+    2.在内层加float后，外层 div 边框包裹不住 内层div 因为提升了层级
+    3.清除浮动方法
+        a.加高度
+        b.给父级加浮动(页面所有的元素都加浮动，margin左右自动失效)
+        c..inline-block清除浮动 margin失效
+        d.空标签清除浮动(IE6最小高度10px；解决后还有2px偏差)
+        e..br清除浮动(不符合工作中结构样式行为你三者分离的要求)
+        f.after伪类清除浮动
+        g.overflow清除浮动
+-->
+<style>
+    .box{
+        border: 1px solid black;
+        /*height: 200px;*/
+        /*float: left;*/
+        /*display: inline-block;*/
+        overflow: hidden;
+    }
+    .item{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        float: left;
+    }
+    /*.clearfix{*/
+        /*clear: both;*/
+    /*}*/
+
+    /*after伪类清除浮动*/
+    /*.clearbox:after{*/
+        /*content:' ';*/
+        /*display: block;*/
+        /*clear: both;*/
+    /*}*/
+    /*适配IE7以下兼容性*/
+    /*
+        zoom缩放触发ie下haslayout,是元素根据自身内容计算宽高
+    */
+    .clearbox{
+        *zoom: 1;
+    }
+
+
+
+</style>
+<body>
+    <div class="box clearbox">
+        <div class="item"></div>
+        <!--空标签清除浮动-->
+        <!--<div class="clearfix"></div>-->
+        <!--br清除浮动-->
+        <!--<br clear="all">-->
+    </div>
+</body>
+</html>

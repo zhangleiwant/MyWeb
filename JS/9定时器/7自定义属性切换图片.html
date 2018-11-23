@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义属性切换图片</title>
+</head>
+<style>
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    body {
+        background: #333333;
+    }
+
+    #container {
+        width: 400px;
+        height: 500px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    #container img {
+        width: 400px;
+        height: 500px;
+    }
+
+    #container ul {
+        position: absolute;
+        top: 0;
+        right: -60px;
+    }
+
+    #container li {
+        width: 40px;
+        height: 40px;
+        background: white;
+        margin-bottom: 20px;
+    }
+
+    #container .active {
+        background: #8ec300;
+    }
+
+    #container span, p {
+        width: 400px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: #000;
+        color: white;
+    }
+
+    #container span {
+        position: absolute;
+        top: 0;
+
+    }
+
+    #container span {
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+    }
+
+</style>
+<script>
+
+    window.onload = function () {
+        var oImg = document.getElementsByTagName('img')[0];
+        var oSpan = document.getElementsByTagName('span')[0];
+        var oP = document.getElementsByTagName('p')[0];
+        var oUl = document.getElementsByTagName('ul')[0];
+        var oLi = oUl.getElementsByTagName('li');
+        var imgArr = ["../2HTML属性操作/img/1.jpg", "../2HTML属性操作/img/2.jpg", "../2HTML属性操作/img/3.jpg", "../2HTML属性操作/img/4.jpg"];
+        var textArr = ["图1", "图2", "图3", "图4"];
+        var oldLi = null;//改变li状态对象
+        var num = 0;
+
+
+        /**************************添加定时器**************************/
+        var timer = null;
+        var img = document.getElementsByTagName('img')[0];
+
+        function autoPlay() {
+            timer = setInterval(function () {
+                num++;
+                num %= textArr.length;
+                fn1();
+            }, 1000);
+        }
+
+        // autoPlay();
+
+        setTimeout(autoPlay, 5000);
+        img.onmouseover = function () {
+            clearInterval(timer);
+        };
+        img.onmouseout = autoPlay;
+
+
+        /*************************************************************/
+
+
+        //初始化
+        function fn1() {
+            oImg.src = imgArr[num];
+            oSpan.innerHTML = 1 + num + "/" + imgArr.length;
+            oP.innerHTML = textArr[num];
+            //第一种思路就是先全部清除，然后在设置选中状态。
+            for (let i = 0; i < oLi.length; i++) {
+                oLi[i].className = "";
+            }
+            oLi[num].className = 'active';
+        }
+
+        fn1();
+        for (let i = 0; i < oLi.length; i++) {
+            oLi[i].index = i;
+            oLi[i].onclick = function () {
+                num = this.index;
+                fn1();
+                //第二种就是清除上一个状态，在设置当前状态。
+                // oldLi.className = '';
+                // oldLi = this;
+                // this.className = 'active';
+            }
+        }
+
+    }
+
+</script>
+
+
+<body>
+<div id="container">
+    <img src="../2HTML属性操作/img/2.jpg"/>
+    <span></span>
+    <p></p>
+    <ul>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--transition属性是一个速记属性有四个属性：transition-property,指定CSS属性的name，transition效果
+     transition-duration,transition效果需要指定多少秒或毫秒才能完成
+     transition-timing-function,指定transition效果的转速曲线
+        linear:    规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。
+        ease:       规定慢速开始，然后变快，然后慢速结束的过渡效果（cubic-bezier(0.25,0.1,0.25,1)）。
+        ease-in     规定以慢速开始的过渡效果（等于 cubic-bezier(0.42,0,1,1)）。
+        ease-out    规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）。
+        ease-in-out     规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）。
+        cubic-bezier(n,n,n,n)       在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值。
+     and transition-delay。定义transition效果开始的时候
+    -->
+
+
+    <!--
+        动画还有animation  ,transfrom   keyframes
+
+    -->
+
+    <style>
+        div
+        {
+            width:100px;
+            height:100px;
+            background:red;
+            /*transition:width .2s;*/
+            /*transition:all .5ms;*/
+            transition-property: width ,height;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+
+            /*-webkit-transition:width 2s; !* Safari *!*/
+        }
+
+        div:hover
+        {
+            height: 200px;
+            width:300px;
+        }
+    </style>
+</head>
+
+<body>
+<p><b>注意：</b>该实例无法在 Internet Explorer 9 及更早 IE 版本上工作。</p>
+
+<div></div>
+
+<p>鼠标移动到 div 元素上，查看过渡效果。</p>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>为div设置样式</title>
+</head>
+<body>
+<div style="z-index: 1">
+    <strong id="title">点击为Div设置样式</strong>
+    <div id="div" style="width: 100px;height: 100px;background-color: white;display: block;border: black solid 10px;margin-top: 10px"></div>
+</div>
+
+<div id="dialog" style="display: none">
+    <!--设置蒙尘，利用z_index确定哪个在最上面-->
+    <div style="position: absolute;top: 0;left: 0;width: 100%;height: 100% ;background-color: #333;opacity: 0.2;z-index: 2"></div>
+    <div
+            style="position: absolute;top:30%;left: 30%;align-items: center;justify-content: center; width: 400px;height: 300px;background-color: white;border: solid gainsboro 10px;z-index: 3 ">
+        <div style="padding: 20px">
+            <span>请选择背景颜色</span>
+            <span id="red" style="background-color: red; color: white;padding: 4px">红</span>
+            <span id="yellow" style="background-color: yellow; color: white;padding: 4px">黄</span>
+            <span id="blue" style="background-color: blue; color: white;padding: 4px">蓝</span>
+        </div>
+        <div style="padding: 20px">
+            <span>请选择宽(px)</span>
+            <span id="width_200" style="background-color: gainsboro; color: white;padding: 4px">200</span>
+            <span id="width_300" style="background-color: gainsboro; color: white;padding: 4px">300</span>
+            <span id="width_400" style="background-color: gainsboro; color: white;padding: 4px">400</span>
+        </div>
+        <div style="padding: 20px">
+            <span>请选择高(px)</span>
+            <span id="height_200" style="background-color: gainsboro; color: white;padding: 4px">200</span>
+            <span id="height_300" style="background-color: gainsboro; color: white;padding: 4px">300</span>
+            <span id="height_400" style="background-color: gainsboro; color: white;padding: 4px">400</span>
+        </div>
+
+        <div style="padding: 20px;width: 150px;margin: auto">
+            <input  type="button" value="恢复" style="padding:10px;background-color: blue" onclick="cancle()">
+            <input  type="button" value="确认"  style="padding: 10px;background-color: blue" onclick="commit()">
+        </div>
+    </div>
+
+</div>
+</body>
+
+<script>
+    var title = document.getElementById('title');
+    var div = document.getElementById('div');
+    var dialog = document.getElementById('dialog');
+    var red = document.getElementById('red');
+    var yellow = document.getElementById('yellow');
+    var blue = document.getElementById('blue');
+    var width_200 = document.getElementById('width_200');
+    var width_300 = document.getElementById('width_300');
+    var width_400 = document.getElementById('width_400');
+    var height_200 = document.getElementById('height_200');
+    var height_300 = document.getElementById('height_300');
+    var height_400 = document.getElementById('height_400');
+    title.onclick = function () {
+        if (dialog.style.display === "none") {
+            dialog.style.display = "block";
+        } else {
+            dialog.style.display = "none"
+        }
+    };
+
+
+    red.onclick = function () {
+       changeColor("red")
+    };
+    yellow.onclick = function () {
+        changeColor("yellow")
+    };
+    blue.onclick = function () {
+        changeColor("blue")
+    };
+
+    width_200.onclick = function () {
+       changeW("200px")
+    };
+    width_300.onclick = function () {
+        changeW("300px")
+    };
+    width_400.onclick = function () {
+        changeW("400px")
+    };
+
+    height_200.onclick = function () {
+       changeH("200px")
+    };
+
+    height_300.onclick = function () {
+        changeH("300px")
+    };
+    height_400.onclick = function () {
+        changeH("400px")
+    };
+
+    function changeColor(color) {
+        div.style.backgroundColor = color;
+    }
+
+    function changeW(width) {
+        div.style.width = width;
+    }
+
+    function changeH(height) {
+        div.style.height = height;
+    }
+    function cancle() {
+        div.style.backgroundColor = "white";
+        div.style.width = "100px";
+        div.style.height = "100px";
+        dialog.style.display = "none"
+    }
+
+    function commit() {
+        dialog.style.display = "none"
+    }
+</script>
+</html>

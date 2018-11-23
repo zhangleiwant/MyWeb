@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--循环查询关键字-->
+<script>
+    window.onload = function () {
+        var s = '妙味课堂真好啊，妙味课堂是萨拉水电费拉水电费，妙味啊';
+        var i = 0;
+        var str = '妙味';
+
+        while (s.indexOf(str, i) !== -1) {
+            alert(s.indexOf(str, i));
+            i = s.indexOf(str, i) + str.length;
+        }
+    }
+</script>
+<body>
+
+</body>
+</html>

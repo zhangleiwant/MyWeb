@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // function Person(name ,age) {
+        //     this.name = name;
+        //     this.age = age;
+        // }
+        //
+        // Person.prototype.say = function () {
+        //     console.log("shuohua....")
+        // };
+        //
+        // var p = new Person("小三",20);
+        // console.log(p);
+        // p.say();
+
+        class Person{
+            constructor(name,age){
+                this.name = name;
+                this.age =age;
+            };
+
+            say(){
+                console.log("say....")
+            }
+        }
+
+        var p =new Person("xiaoxiao",10)
+
+        console.log(p);
+        p.say();
+        console.log(typeof Person)
+
+    </script>
+</body>
+</html>

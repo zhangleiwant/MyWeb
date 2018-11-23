@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    li {
+        list-style: none;
+        height: 20px;
+        margin-bottom: 3px;
+    }
+</style>
+<script>
+    <!--
+    方式一
+    自定义属性
+    鼠标进入灰色鼠标离开恢复-->
+    // window.onload = function () {
+    //     var colors = ['red', 'yellow', 'green'];
+    //     var aLi = document.getElementsByTagName('li');
+    //     var index = '';//记录当前颜色位置
+    //     for (var i = 0; i < aLi.length; i++) {
+    //         aLi[i].style.background = colors[i % colors.length];
+    //         aLi[i].index = i;//自定义属性
+    //         aLi[i].onmouseover = function () {
+    //             this.style.background = 'gray'
+    //         };
+    //         aLi[i].onmouseout = function () {
+    //             this.style.background = colors[this.index % colors.length];
+    //         }
+    //     }
+    // }
+    <!--方式二 变量方式解决 鼠标进入灰色鼠标离开恢复-->
+    //注意在鼠标移入的时候设置变量值，然后通过this进行赋值
+    window.onload = function () {
+        var colors = ['red', 'yellow', 'green'];
+        var aLi = document.getElementsByTagName('li');
+        var str = '';//记录当前颜色
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].style.background = colors[i % colors.length];
+            aLi[i].onmouseover = function () {
+                str = this.style.background;
+                this.style.background = 'gray'
+            };
+            aLi[i].onmouseout = function () {
+                // alert(str)
+                this.style.background = str;
+            }
+        }
+    }
+
+
+    //永久变灰。
+    // window.onload = function () {
+    //     var colors = ['red', 'yellow', 'green'];
+    //     var aLi = document.getElementsByTagName('li');
+    //     var index = '';//记录当前颜色位置
+    //     for (var i = 0; i < aLi.length; i++) {
+    //         aLi[i].style.background = colors[i % colors.length];
+    //         aLi[i].index = i;//自定义属性
+    //         str = aLi[i].style.background;
+    //         aLi[i].onclick = function () {
+    //             this.style.background = 'gray'
+    //         };
+    //
+    //     }
+    // }
+</script>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

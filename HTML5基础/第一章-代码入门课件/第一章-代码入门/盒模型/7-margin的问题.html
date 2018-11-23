@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				background-color: red;
+				border: 1px solid black;
+			}
+			#div1{
+				height: 50px;
+				background-color: pink;
+				margin: 100px 100px 100px 100px;
+			}
+			#div2{
+				height: 50px;
+				background-color: yellow;
+				margin: 100px;
+			}
+		</style>
+		<!--
+			margin的问题
+			1、margin-top传递
+				解决方法：仅用以学知识点可以使用border解决
+			2、margin上下叠压
+				解决技巧：
+					1、还是使用margin，可以将某一个元素方向设置成预想的值。margin叠压会取最大的margin值.
+					2、如果元素没有特殊特征，也可以用padding代替
+		-->
+	</head>
+	<body>
+		<div id="box">
+			<div id="div1">div1</div>
+			<div id="div2">div2</div>
+		</div>
+	</body>
+</html>

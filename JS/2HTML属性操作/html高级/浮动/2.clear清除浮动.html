@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clear清除浮动</title>
+</head>
+<!--
+只在image中加float时候，img和p显示在一行
+如果在p中清除左侧浮动的时候，会正常显示。
+-->
+<style>
+    img {
+        float: left;
+    }
+
+    p {
+        clear: left;
+    }
+</style>
+<body>
+<img src="../img/1.png">
+<p>清除浮动啦</p>
+</body>
+</html>

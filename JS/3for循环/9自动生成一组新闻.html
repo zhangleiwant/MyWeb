@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="create" type="button" value="自动生成一组新闻">
+<ul id="ul1"></ul>
+</body>
+<script>
+    var news = [
+        '习近平两院院士大会重要讲话激励香港科学家',
+        '习近平强调坚定不移深化改革扩大开放',
+        '党员干部，总书记手把手教你用马哲',
+        '中吉乌公路使古丝路焕发新生机 2018上合峰会',
+        ' 守护共识需中美相向笃定而行'
+    ];
+    window.onload = function () {
+        var btn = document.getElementById("create");
+        var oUl = document.getElementById("ul1");
+        var len = news.length;
+        //bug每点击一次生成一组
+        //解决 隐藏 不可点 清空在生成 最后一种就是设置开关
+        var isCreate  = true;
+        btn.onclick = function () {
+            if (isCreate){
+                for (let i = 0; i < len; i++) {
+                    oUl.innerHTML +="<li>"+news[i]+"</li>"
+                }
+            }
+            isCreate = false;
+        }
+    }
+</script>
+</html>
